@@ -6,14 +6,7 @@ var rank_player_name = [];
 for (i=0;i<10;i++) {
     rank_player_name.push(0);
 }
-var class_color = [];
-for (i=0;i<10;i++) {
-    class_color.push(" ");
-}
 
-function checkTime(time) {
-    return age < fastest_record;
-}
 function addTime(){
     //add_btn = document.getElementById("addTime");
     fastest = document.getElementById("fastest");
@@ -65,6 +58,7 @@ function addTime(){
         //record.innerHTML = time;
         top_10.push(time);
         top_10.sort();
+        total_num_records += 1;
         if (time < fastest_record) {
             fastest_record = time;
             fastest.innerText = fastest_record;
@@ -75,7 +69,7 @@ function addTime(){
         record.innerText = `${m}:${s}:${ms}`;
         new_record = record.innerHTML;
         all_records.innerHTML += `<tr id='${rec_id}'><td>${player_name}</td><td>${new_record}</td><td><button onclick='deleteRow(this)'>Delete</button></td></tr>`;
-        total_num_records += 1;
+
         total_records.innerText = `Total number of records: ${total_num_records}`;
         //let index = top_10.indexOf(time);
 
