@@ -1,0 +1,174 @@
+/*@font-face {
+    font-family: "avenger";
+    src: url('AVENGEANCE MIGHTIEST AVENGER.otf');
+}
+*/
+@font-face {
+    font-family: "wright";
+    src: url('CharlesWright-Bold.otf');
+}
+
+@font-face {
+    font-family: "laybar";
+    src: url('LAYBAR.ttf');
+}
+
+@font-face {
+    font-family: "pop";
+    src: url('60s\ Pop.otf');
+}
+
+* {
+    font-family: wright;
+}
+
+html{
+    overflow-x: hidden;
+    background-position-x: fixed;
+}
+
+body {
+    background-image: url('bg.png');
+    background-size: cover;
+}
+
+h1 {
+    font-family: laybar;
+    font-size: 50px;
+    margin: 30px 10px;
+    font-weight: 200;
+    /*color: rgb(255, 255, 255);
+    color: rgb(111, 220, 111);
+    background-color:rgb(87, 26, 152);*/
+    background: white;
+    filter: drop-shadow(rgb(55, 135, 74) 10px 6px 0px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    width: 10%;
+    padding: 8px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+}
+
+.addTime {
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin: 1%;
+    width: 90%;
+    background: linear-gradient(to right,rgb(227, 72, 5) 2%,rgb(243, 166, 79));
+    border: white 3px solid;
+}
+
+.addTime p{
+    color: white;
+    font-size: 30px;;
+}
+.red {
+    background-color: rgb(221, 19, 19);
+}
+.blue {
+    background-color: rgb(19, 112, 234);
+}
+.block {
+    background: linear-gradient(rgb(222, 70, 0) 5%,rgb(243, 166, 79));
+    filter: drop-shadow(rgb(55, 135, 74) 20px 20px);
+    padding: 2% 3%;
+    width: 70%;
+    border-radius: 50px;
+    border: white 3px solid;
+}
+
+#add {
+    margin-left: 28%;;
+}
+#leaderboard { 
+    background-color:rgb(255, 255, 255);
+    width: 60%;
+    border-spacing: 0px;
+}
+#leaderboard td {
+    font-size: 14px;
+    text-align: center;
+}
+#leaderboard th {
+    background: linear-gradient(rgb(55, 135, 74), rgb(105, 180, 105));
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
+    font-family: laybar;
+}
+
+#add_btn {
+    background:linear-gradient(rgb(55, 135, 74), rgb(105, 180, 105));
+    border: none;
+    padding: 14px 24px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+#add_btn:hover {
+    background: linear-gradient(rgb(105, 180, 105), rgb(204, 240, 141));
+    transform: scale(1.1);
+}
+
+#top10 {
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 10px;
+    width: 300px;
+    transform: skew(-10deg);
+    color: white;
+    font-family: pop;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 4% 5%;
+}
+/* Core functionality */
+#animated-text-strip{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+#animated-text-strip .marquee {
+  white-space: nowrap;
+  animation: marquee 5s linear infinite;
+  max-width: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* Styles for the sake of the demonstration */
+#animated-text-strip{
+  padding: 1rem 0;
+}
+.marquee{
+  font-family: laybar;
+  padding: 1.5rem;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.7;
+}
+
+.block2 {
+    background: linear-gradient(white, rgba(255, 255, 255, 0.393));
+    padding: 2rem;
+}
+
+#newRec1 {
+    text-decoration: underline;
+}

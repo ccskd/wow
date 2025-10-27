@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wow Race Gambling Site</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <h1 style="margin-left: 5%;">Leaderboard</h1>
+        <p id="log"></p>
+
+            <div style="width: 110%; background:linear-gradient(to right,rgb(55, 135, 74), rgb(134, 198, 103)); height: 140px; margin-bottom: -340px; margin-top: 220px; margin-left: -10px; margin-right: -10px;">
+<div id="animated-text-strip">
+  <span class="marquee">WOW WOW WOW WOW WOW&nbsp;</span>
+  <span class="marquee">WOW WOW WOW WOW WOW&nbsp;</span>
+  <span class="marquee">WOW WOW WOW WOW WOW&nbsp;</span>
+</div>
+            </div>
+        <center>
+        <div class="block">
+        <h2 id="top10">Top 10 Players</h2>
+        <table border="1" id="leaderboard" cellpadding="7px ">
+
+                <tr>
+                    <th>Ranking</th>
+                    <th>Record</th>
+                </tr>
+                <tr id="r1">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r2">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r3">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r4">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r5">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r6">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r7">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r8">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r9">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+                <tr id="r10">
+                    <td>-</td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </div><br>
+
+        </div>
+
+        <table>
+            <td>
+                <div id="add_div" class="addTime">
+                    <p>
+                    <input type="string" id="player" placeholder="Name" value="Anonymous" style="width: 100px">
+                    <input type="number" id="m" value="0" min="0"> :
+                    <input type="number" id="s" value="0" min="0" max="59"> : 
+                    <input type="number" id="ms" value="0" min="0" max="999">
+                    <button id="add_btn" onclick="addTime()">Add</button>
+                    </p>
+                </div>
+            </td>
+            <!--<td>
+                <div class="addTime blue">
+                    <input type="string" id="player" placeholder="Player name" value="Anonymous" style="width: 100px">
+                    <input type="number" id="m" value="0" min="0"> :
+                    <input type="number" id="s" value="0" min="0" max="59"> : 
+                    <input type="number" id="ms" value="0" min="0" max="999">
+                    <button onclick="addTime('blue')">Add</button>
+                </div>
+            </td>-->
+            
+        </table>
+        </center>
+        <div class="block2">
+            <h2 id="total_num_records">Total number of records: </h2>
+            <p id="newRec1">NEW RECORD: </p>
+            <table id="allRec">
+                <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </body>
+</html>
