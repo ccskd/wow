@@ -9,6 +9,7 @@
 
         <h1 style="margin-left: 5%;">Leaderboard</h1>
         <p id="log"></p>
+        <img style="position: relative;margin: -15rem -100px -200px 50%" src="wow_cup.gif">
 
             <div style="width: 110%; background:linear-gradient(to right,rgb(55, 135, 74), rgb(134, 198, 103)); height: 140px; margin-bottom: -340px; margin-top: 220px; margin-left: -10px; margin-right: -10px;">
 <div id="animated-text-strip">
@@ -17,6 +18,7 @@
   <span class="marquee">WOW WOW WOW WOW WOW&nbsp;</span>
 </div>
             </div>
+
         <center>
         <div class="block">
         <h2 id="top10">Top 10 Players</h2>
@@ -68,9 +70,7 @@
                 </tr>
             </table>
         </div><br>
-
         </div>
-
         <table>
             <td>
                 <div id="add_div" class="addTime">
@@ -79,7 +79,7 @@
                     <input type="number" id="m" value="0" min="0"> :
                     <input type="number" id="s" value="0" min="0" max="59"> : 
                     <input type="number" id="ms" value="0" min="0" max="999">
-                    <button id="add_btn" onclick="addTime()">Add</button>
+                    <button class="btn" id="add_btn" onclick="addTime()">Add</button>
                     </p>
                 </div>
             </td>
@@ -95,8 +95,9 @@
             
         </table>
         </center>
-        <div class="block2">
-            <h2 id="total_num_records">Total number of records: </h2>
+        <a style="text-align: right;" class="btn" href="game.html">Game</a>
+        <div class="block2" style="margin-top: 3rem;">
+            <h2 style="display: inline-block;" id="total_num_records">Total number of records: </h2>
             <p id="newRec1">NEW RECORD: </p>
             <table id="allRec">
                 <tr>
@@ -109,5 +110,4 @@
 
 
     </body>
-
 </html>
